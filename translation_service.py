@@ -12,15 +12,22 @@ class TranslationService(object):
                 'Make America great again.',
                 'LAWW and ORRRDER.',
                 'It\'s gonna be yuge!',
-                'We need to build a wall on the Mexican border.'
+                'We need to build a wall on the Mexican border.',
+                
         ]
 
-        self.begin_words = {
-                'I went to an Ivy League school.' : (0.1, None),
-                'Excuse me,' : (0.45, None),
-                'I\'m, like, a really smart person.': (0.2, 'Look what I built - something truly classy, Trump Tower'),
-                'Believe me, ': (0.35, 'It\'s gonna be yuge!')
+        self.assoc_words = {
+                'china': self.china_words
         }
+        self.begin_words = {
+            'I went to an Ivy League school.' : (0.1, None),
+            'Excuse me,' : (0.40, None),
+            'I\'m, like, a really smart person.': (0.2, 'Look what I built - something truly classy, Trump Tower'),
+            'Believe me, ': (0.35, 'It\'s gonna be yuge!'),
+            'Well, first I have to say one thing, very important.': (0.3, None),
+            'I know the Chinese. I\'ve made a lot of money with the Chinese. I understand the Chinese mind', (0.2, None),
+        }
+
 
     def add_mannerisms(self, text):
         sentences = text.split('.')
