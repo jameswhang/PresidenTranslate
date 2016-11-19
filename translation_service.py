@@ -16,16 +16,13 @@ class TranslationService(object):
                 
         ]
 
-        self.assoc_words = {
-                'china': self.china_words
-        }
         self.begin_words = {
             'I went to an Ivy League school.' : (0.1, None),
             'Excuse me,' : (0.40, None),
             'I\'m, like, a really smart person.': (0.2, 'Look what I built - something truly classy, Trump Tower'),
             'Believe me, ': (0.35, 'It\'s gonna be yuge!'),
             'Well, first I have to say one thing, very important.': (0.3, None),
-            'I know the Chinese. I\'ve made a lot of money with the Chinese. I understand the Chinese mind', (0.2, None),
+            'I know the Chinese. I\'ve made a lot of money with the Chinese. I understand the Chinese mind':(0.2, None),
         }
 
 
