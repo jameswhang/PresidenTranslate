@@ -1,0 +1,30 @@
+.title {
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	font-weight: 650;
+	line-height: 75px;
+}
+
+.title:hover {
+	text-shadow: 0 0 60px #e79d74;
+}
+
+.humantext-title:hover {
+	text-shadow: 0 0 60px #59b1f2;
+}
+
+.trumptext-title:hover {
+	text-shadow: 0 0 60px #e79d74;
+}
+
+.text-muted {
+	margin-left: 10px;
+}
+
+.humantext, .humantext-title, .trumptext, .trumptext-title, .btn-translate {
+	letter-spacing: 1px;
+}
+
+.btn {
+	margin-top: 20px;
+}
