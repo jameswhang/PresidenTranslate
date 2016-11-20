@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.btn-translate').on('click', function() {
         var inputText = $('.humantext')[0].value;
         $.ajax({
-            'url': 'http://localhost:5000/translate',
+            'url': 'https://vast-chamber-41287.herokuapp.com/translate',
             'method': 'POST',
             'data': {
                 'translateText': inputText,
